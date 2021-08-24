@@ -10,15 +10,15 @@ int main()
     {
         int num;
         scanf("%d", &num);
+        if (num > max)
+        {
+            max = num;
+        }
         if (num < min)
         {
-            min = num; 
-        }
-        else if (num > max)
-        {
-            max = num; 
+            min = num;
         }
     }
-    printf("Answer = %d", max + min);
+    printf("Answer = %d", min + max);
     return 0;
 }
